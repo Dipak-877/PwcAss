@@ -1,0 +1,38 @@
+.sidenav {
+    height: 100%;
+    width: 207px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    border-right: 1px solid slategray;
+  }
+  
+ 
+.inner
+{
+    width: 0px;
+    height: 15px;
+    background: green;
+    -webkit-transition:width 3s linear;
+    transition: width 3s linear;
+}
+.progress-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 30px;
+}
+.progress{
+  height: 8px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    /* overflow: visible; */
+    position: relative;
+    width: 168px;
+}
+
+

@@ -1,0 +1,67 @@
+
+
+
+<div class="row"*ngFor="let item of this.cartService?.cartItem" >
+        <div class=".col-6 col-sm-6  col-lg-6 col-xl-6 divpart"  >
+                <button class="btn1">
+                        <img class="img" src="{{item.img_url}}"/>
+                        </button>
+        <button class="btn m-2" (click)="decereaseItem(item)"><i class="fa fa-minus"></i></button>
+        <button class="btn m-2">{{itemCount}}</button>
+        <button (click)="increaseItem()" class="btn m-2"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button class="btn m-3" (click)="removeItem(item)"><i class="fa fa-close"></i> Remove</button>
+        <span>{{item.name}}</span>
+        <span style="padding-left: 26px;"><i class="fa fa-inr">{{item.price}}</i></span>
+        <span style="padding-left: 26px;color:blue;"> Discount :<i class="fa fa-inr">{{item.discount}}</i></span>
+        <span style="padding-left: 26px;color:blue;text-decoration: line-through;"> {{item.discount}}%Off</span>
+       </div>
+       <div class=".col-6 col-sm-6  col-lg-4 col-xl-4 divpart" >
+            <h3 style="    color: seagreen;">Price Details:-</h3>
+            <hr/>
+            <div class="row">
+                    
+                    <div class="col-6">Price Item({{itemCount}} item):</div>
+                    <div class="col-6"><i style="padding-left: 26px;color:blue;"class="fa fa-inr">{{item.price*itemCount}}</i></div>
+                    <div class="col-6">Discount:</div>
+                    <div class="col-6"><i style="padding-left: 26px;color:blue;"class="fa fa-inr">{{item.discount*itemCount}}</i></div>
+                   <br/>   <br/>   
+                   <hr/>
+                    <div class="col-6">Total Price</div>
+                    <div class=".col-6"><i style="padding-left: 26px;color:blue;"class="fa fa-inr">{{item.price*itemCount-item.discount*itemCount}}</i></div>
+                  </div>
+   <!-- <div class="row">
+       <h3>Price Details:----</h3>
+       <hr/>
+       <div class=".col-6">Price Item({{itemCount}} item):</div>
+       <div class=".col-6">{{item.price*itemCount}}</div>
+       <div class=".col-6">Discount :{{item.discount}}</div>
+       <div class=".col-6">{{item.price*itemCount}}</div>
+      
+  
+   </div> -->
+  
+ 
+   </div>
+    </div>
+
+
+
+
+
+<!-- 
+<div *ngFor="let item of this.cartService?.cartItem" role="group" aria-label="Basic example" class="divpart">
+        <button class="btn1">
+                <img class="img" src="{{item.img_url}}"/>
+                <p class="txt">{{item.name}}</p>
+                </button>
+<button class="btn m-2" (click)="decereaseItem(item)"><i class="fa fa-minus"></i></button>
+<button class="btn m-2">{{itemCount}}</button>
+<button (click)="increaseItem()" class="btn m-2"><i class="fa fa-plus" aria-hidden="true"></i></button>
+<button class="btn m-3" (click)="removeItem(item)"><i class="fa fa-close"></i> Remove</button>
+<div>{{item.price*itemCount}}</div>
+</div> -->
+
+<div class="btn-group">
+        <button type="button" class="btn btn-primary" (click)="backToshoping()">Back To Shoping Page</button>
+        
+      </div>

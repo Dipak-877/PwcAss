@@ -1,0 +1,25 @@
+
+
+<div class="d-flex ">
+        <div class="p-2 flex-fill hoverClass">Sort By</div>
+        <div class="p-2  flex-fill hoverClass">Price--High Low</div>
+        <div class="p-2 flex-fill hoverClass">Price--Low High</div>
+        <div class="p-2 flex-fill hoverClass">Price--Discount</div>
+      </div>
+<div class="row">
+    <div class=".col-6 col-sm-6 col-lg-3 col-xl-3" style="
+    background: lightgray;"*ngFor="let x of this.services.listItem">
+     <p>{{x.name}}</p>
+    <img class="img-responsive" class="img-thumbnail" alt="Cinque Terre" [src]="x.img_url" style="height:300px;width:300px;"/>
+        <!-- <p><i class="fa fa-inr">{{x.price}}</i>{{x.discount}}</p> -->
+        <span><i class="fa fa-inr">{{x.price}}</i></span>
+        <span style="padding-left: 26px;color:blue;"> Discount :<i class="fa fa-inr">{{x.discount}}</i></span>
+        <span style="padding-left: 26px;color:blue;text-decoration: line-through;"> {{x.discount}}%Off</span>
+        <div class="_3JlYXy">
+                <button (click)="addToCart(x)" style="border-radius: 10px;"class="btn btn-primary btn-sm">Add To Cart</button>
+        </div>
+   
+    </div>
+   </div>
+
+  

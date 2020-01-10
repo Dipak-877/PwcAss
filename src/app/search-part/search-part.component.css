@@ -1,0 +1,23 @@
+/* .search{
+    float: right;
+    position: relative;
+    padding-top: -17px;
+    padding: -22px;
+    top: -33px;
+    right: 100px;
+} */
+.inputClass{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding: 5px 15px;
+    outline: none;
+    color:white;
+  
+    background-color: #1976d2
+}
+::placeholder { 
+    color:white;
+  
+  }

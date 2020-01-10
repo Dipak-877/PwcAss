@@ -1,0 +1,33 @@
+.img{
+    width: 241px;
+    padding: 0px;
+    padding-bottom: 16px;
+    height: 166px;
+}
+.txt{
+   font-family: Georgia, serif;
+    text-align: center;
+    width: 85px;
+    color: blue;
+    padding-left: 34px;
+    font-size: 14px;
+}
+.btn1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 263px;
+    padding-top: 12px;
+    
+}
+.divpart{
+    background-color: lightgray;
+    border: 1px solid rebeccapurple;
+    margin: 15px;
+}
+hr {
+    /* color: red; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid rgba(0,0,0,.1);
+}
